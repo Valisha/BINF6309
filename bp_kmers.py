@@ -16,7 +16,16 @@ for record in SeqIO.parse("/scratch/Drosophila/dmel-all-chromosome-r6.17.fasta",
         if (len(seq)) == 6: 
             kmer_list.append(str(seq))
     kmer_dict = {}
-    for i in range(len(kmer_list)):
-        kmer_dict.update({kmer_list[i]:kmer_list.count(kmer_list[i])})
-    print(kmer_dict)
+    for kmer in kmer_list:
+        if kmer in kmer_dict:
+            kmer_dict[kmer] +=1 
+        else:
+            kmer_dict[kmer]=0
+    uni = []
+    for kmer in kmer_dict.keys():
+        if kmer_dict[kmer]==0:
+             uni.append(kmer)
+print(len(kmer))
+        
+   
 
