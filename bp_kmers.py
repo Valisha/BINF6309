@@ -32,6 +32,5 @@ for i in range(len(uni)):
     uniq.update({i:uni[i]})
 for i in uniq.keys():
     records.append(SeqRecord(Seq(uniq[i], generic_dna), str(i)))
-#my_seqs = SeqRecord(Seq(records, IUPAC.DNA), id = "randomsequence")
-SeqIO.write(records,"k-mers.fasta.gitignore", "fasta")
+SeqIO.write(records,"k-mers.fasta", "fasta")
 
