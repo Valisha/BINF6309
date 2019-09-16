@@ -5,7 +5,6 @@ import re
 from Bio.Seq import Seq
 from Bio.Alphabet import generic_dna
 from Bio.SeqRecord import SeqRecord
-from Bio import SeqIO
 
 for record in SeqIO.parse("/scratch/Drosophila/dmel-all-chromosome-r6.17.fasta","fasta"):
     sequence = str(record.seq)
