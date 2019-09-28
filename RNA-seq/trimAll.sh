@@ -18,11 +18,11 @@ do
     -threads 1 -phred33 \
     $fastqPath$sampleName$leftSuffix \
     $fastqPath$sampleName$rightSuffix \
-    $sampleName$leftSuffix \
-    $sampleName$leftSuffix \
-    $sampleName$rightSuffix \
-    $sampleName$rightSuffix \
+    $pairedOutPath$sampleName$leftSuffix \
+    $unPairedOutPath$sampleName$leftSuffix \
+    $pairedOutPath$sampleName$rightSuffix \
+    $unpairedOutPath$sampleName$rightSuffix \
     HEADCROP:0 \
     ILLUMINACLIP:/usr/local/programs/Trimmomatic-0.36/adapters/TruSeq3-PE.fa:2:30:10 \
-    LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+    LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36 1>$sampleName.trim.log 2>$sampleName.trim.err
     done
