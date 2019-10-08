@@ -5,5 +5,5 @@
 *.fasta
 !*.ris
 !*.Rmd
-
+!*.md
 
