@@ -23,7 +23,7 @@ differentially expressed genes.
 
 
 ## References
-Love, Michael I., Wolfgang Huber, and Simon Anders. 2014. “Moderated Estimation of Fold Change and Dispersion for RNA-Seq Data with DESeq2.” *Genome Biol* 15 (12): 550–50..
- Patro, Rob, Geet Duggal, Michael I. Love, Rafael A. Irizarry, and Carl Kingsford. 2017. “Salmon Provides Fast and Bias-Aware Quantification of Transcript Expression.” *Nat Methods* 14 (4): 417–19..
- Soneson, Charlotte, Michael I. Love, and Mark D. Robinson. 2016. “Differential Analyses for RNA-Seq: Transcript-Level Estimates Improve Gene-Level Inferences.” *F1000Res* 4 (February): 1521–1..
+1) Love, Michael I., Wolfgang Huber, and Simon Anders. 2014. “Moderated Estimation of Fold Change and Dispersion for RNA-Seq Data with DESeq2.” *Genome Biol* 15 (12): 550–50..
+2) Patro, Rob, Geet Duggal, Michael I. Love, Rafael A. Irizarry, and Carl Kingsford. 2017. “Salmon Provides Fast and Bias-Aware Quantification of Transcript Expression.” *Nat Methods* 14 (4): 417–19..
+3) Soneson, Charlotte, Michael I. Love, and Mark D. Robinson. 2016. “Differential Analyses for RNA-Seq: Transcript-Level Estimates Improve Gene-Level Inferences.” *F1000Res* 4 (February): 1521–1..
 
