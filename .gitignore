@@ -4,4 +4,6 @@
 !*.py
 *.fasta
 !*.ris
+!*.Rmd
+
 
