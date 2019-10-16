@@ -1,9 +1,9 @@
 ---
-author: "Valisha Shah (Valisha)"
+
 title: "Variant Calling"
-output:
-        md_document:
-                variant: gfm
+author: "Valisha Shah (Valisha)"
+output: md_document
+
 ---
 
 # Methods 
