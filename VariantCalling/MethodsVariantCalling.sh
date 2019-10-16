@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-R -e "rmarkdown::render('methodsResults.Rmd', output_format='md_document')"
+R -e "rmarkdown::render('MethodsVariantCalling.Rmd', output_format='md_document')"
