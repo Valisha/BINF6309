@@ -1,12 +1,12 @@
-------------------------------------------------------------------------
+author: Valisha Shah title: Variant Calling output: html\_document: toc:
+true toc\_depth: 4 toc\_float: true dev: ‘svg’ md\_document: variant:
+gfm bibliography: bibliography.ris —
 
-title: “Variant Calling” author: “Valisha Shah (Valisha)” output:
-md\_document
-
-------------------------------------------------------------------------
+Variant Calling
+===============
 
 Methods
-=======
+-------
 
 -   getGenome.sh getGenome uses “wget” command to retrieve reference
     genome from an online database
