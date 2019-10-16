@@ -3,7 +3,7 @@ title: Variant Calling
 output:
         md_document:
                 variant: gfm
-___
+---
 
 ##Methods 
 ### getGenome.sh

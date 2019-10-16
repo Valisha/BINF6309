@@ -1,5 +1,5 @@
 author: Valisha Shah (Valisha) title: Variant Calling output:
-md\_document: variant: gfm \_\_\_
+md\_document: variant: gfm —
 
 \#\#Methods \#\#\# getGenome.sh getGenome uses “wget” command to
 retrieve reference genome from an online database \#\#\# getReads.sh
