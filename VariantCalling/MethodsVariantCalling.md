@@ -1,4 +1,5 @@
-author: Valisha Shah (Valisha) output: md\_document: variant: gfm \_\_\_
+author: Valisha Shah (Valisha) title: Variant Calling output:
+md\_document: variant: gfm \_\_\_
 
 Methods
 =======
