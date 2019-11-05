@@ -1,3 +1,6 @@
+!*.nex
+!*.pdf
+!*.png
 !APOE_refseq_transcript.fasta
 *.*
 !*.pl 
