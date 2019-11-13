@@ -1,4 +1,9 @@
 *.*
+!*.nex
+!*.pdf
+!*.png
+!APOE_refseq_transcript.fasta
+#*.*
 !*.pl 
 !*.sh
 !*.py
@@ -9,4 +14,6 @@
 !*.Rmd
 !*.md
 !*.nb.html
+!*.qza
+!*qzv
 
