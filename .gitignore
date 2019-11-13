@@ -1,10 +1,12 @@
-!APOE_refseq_transcript.fasta
 *.*
 !*.pl 
 !*.sh
 !*.py
+!*.qza
+!*.qzv
 *.fasta
 !*.ris
 !*.Rmd
 !*.md
+!*.nb.html
 
