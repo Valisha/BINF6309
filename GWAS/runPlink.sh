@@ -20,7 +20,6 @@ plink --bfile hapmap1 --assoc --out as1
 sort --key=7 -nr as1.assoc | head 
 ## To get a sorted list of association results, that also includes a range of significance values that are adjusted for multiple testing, use the --adjust flag
 plink --bfile hapmap1 --assoc --adjust --out as2 
-more as2.assoc.adjusted
 plink --bfile hapmap1 --pheno pop.phe --assoc --adjust --out as3
 ## genotypic and other association models 
 plink --bfile hapmap1 --model --snp rs2222162 --out mod1
@@ -28,10 +27,8 @@ plink --bfile hapmap1 --model --cell 0 --snp rs2222162 --out mod2
 ## stratification analysis 
 ## clustering analysis 
 plink --bfile hapmap1 --cluster --mc 2 -- ppc 0.05 --out str1 
-more str1.cluster1
 ## association analysis, accounting for clusters 
 plink --bfile hapmap1 --mh --within str1.cluster2 --adjust --out aac1 
-more aac1.cmh.adjusted 
 ## reuquesting for each cluster that contais at least 1 case and 1 control 
 plink --bfile hapmap1 --cluster --cc --ppc 0.01 --out version2
 plink --bfile hapmap1 --mh --within version2.cluster --adjust --out aac2
