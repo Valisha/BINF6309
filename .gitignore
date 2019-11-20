@@ -2,7 +2,7 @@
 !*.pdf
 !*.png
 !APOE_refseq_transcript.fasta
-#*.*
+*.*
 !*.pl 
 !*.sh
 !*.py
@@ -10,4 +10,5 @@
 !*.ris
 !*.Rmd
 !*.md
-
+!*.nb.html
+!*.hapmap1.zip
