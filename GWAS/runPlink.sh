@@ -39,6 +39,12 @@ plink --bfile hapmap1 --cluster --K 2 --out version3
 ## external clustering in the analyses
 plink --bfile hapmap1 --mh --within pop.phe --adjust --out aac3
 plink --bfile hapmap1 --cluster --matrix --out ibd_view
-
+## Quantitative trait association analysis
+plink --bfile hapmap1 --assoc --pheno qt.phe --out quant1
+plink --bfile hapmap1 --assoc --pheno qt.phe --perm --within str1.cluster2 --out quant2
+# perform the analysis for the main SNP of interest rather than all SNPs 
+plink --bfile hapmap1 --pheno qt.phe --gxe --covar pop.phe --snp rs2222162 --out quant3
+# extracting a SNP of interest
+plink --bfile hapmap1 --snp rs2222162 --recodeAD --out rec_snp1 
 
 
