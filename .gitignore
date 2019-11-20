@@ -17,3 +17,5 @@
 !*.qza
 !*qzv
 !*.R
+!*.mibs
+!*.mibs.id
