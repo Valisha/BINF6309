@@ -1,0 +1,21 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+generating a visualization of hte substructure by creating a matrix of pairwise IBS distances. 
+```{r}
+m <- as.matrix(read.table("C:\\Users\\shahv\\OneDrive\\Desktop\\bioinformatics\\fall 2019\\BINF6309\\ibd_view.mibs"))
+
+```
+
+```{r}
+mds <- cmdscale(as.dist(1-m))
+k <- c(rep("green",45), rep("blue", 44))
+plot(mds, pch = 20, col = k)
+```
+
+```{r}
+d
+d <- read.table("C:\\Users\\shahv\\OneDrive\\Desktop\\bioinformatics\\fall 2019\\BINF6309\\rec_snp1.raw", header =T)
+summary(glm(PHENOTYPE~rs2222162_1, data = d), family = "binomial")
+```
