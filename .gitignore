@@ -3,13 +3,10 @@
 !*.pdf
 !*.png
 !APOE_refseq_transcript.fasta
-<<<<<<< HEAD
 *.*
 !*.pl 
-=======
 #*.*
 !*.pl
->>>>>>> fbd775a64472f75d44cdedb1e760867d1b053906
 !*.sh
 !*.py
 !*.qza
@@ -24,9 +21,8 @@
 !*.R
 !*.mibs
 !*.mibs.id
-<<<<<<< HEAD
 !*.raw
-!*.zip
-=======
+!*.lmiss
+!*.imiss
+!*.frq.strat
 
->>>>>>> fbd775a64472f75d44cdedb1e760867d1b053906
