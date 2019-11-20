@@ -1,0 +1,70 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+generating a visualization of hte substructure by creating a matrix of pairwise IBS distances. 
+```{r}
+m <- as.matrix(read.table("C:\\Users\\shahv\\OneDrive\\Desktop\\bioinformatics\\fall 2019\\BINF6309\\ibd_view.mibs"))
+
+```
+
+```{r}
+mds <- cmdscale(as.dist(1-m))
+k <- c(rep("green",45), rep("blue", 44))
+plot(mds, pch = 20, col = k)
+```
+
+```{r}
+d
+d <- read.table("C:\\Users\\shahv\\OneDrive\\Desktop\\bioinformatics\\fall 2019\\BINF6309\\rec_snp1.raw", header =T)
+summary(glm(PHENOTYPE~rs2222162_1, data = d), family = "binomial")
+```
+
+```{r}
+v3c3 <- read.table("version3.cluster3")
+kable(v3c3)
+v3c2 <- read.table("version3.cluster2")
+kable(v3c2)
+v3c1 <- read.table("version3.cluster1")
+kable(v3c1)
+v2c3 <- read.table("version2.cluster")
+kable(v2c3)
+v2c2 <- read.table("version2.cluster2")
+kable(v2c2)
+v2c1 <- read.table("version2.cluster1")
+kable(v2c1)
+s1c3 <- read.table("str1.cluster3")
+kable(s1c3)
+s1c2 <- read.table("str1.cluster2")
+kable(s1c2)
+s1c1 <- read.table("str1.cluster1")
+kable(s1c1)
+sn <- read.table("snp1_frq_stat.frq.strat")
+kable(sn)
+rlm <- read.table("real.lmiss")
+rim <- read.table("real.imiss")
+kable(rlm)
+kable(rim)
+q3qa <- read.table("quant3.qassoc.gxe")
+q3pm <- read.table("quant2.qassoc.perm")
+kable(q3qa)
+kable(q3pm)
+q2q <- read.table("quant2.qassoc")
+q1q <- read.table("quant1.qassoc")
+mlm <- read.table("miss_stat.lmiss")
+kable(q2q)
+kable(q1q)
+kable(mlm)
+mim <- read.table("miss_stat.imiss")
+kable(mim)
+ibdc3 <- read.table("ibd_view.cluster3")
+kable(ibdc3)
+ibdc2 <- read.table("ibd_view.cluster2")
+ibdc1 <- read.table("ibd_view.cluster1")
+kable(ibdc2)
+kable(ibdc1)
+aac3 <- read.table("aac3.cmh.adjusted")
+aac1 <- read.table("aac1.cmh.adjusted")
+kable(aac3)
+kable(aac1)
+```
