@@ -5,7 +5,7 @@
 !APOE_refseq_transcript.fasta
 *.*
 !*.pl 
-#*.*
+*.*
 !*.pl
 !*.sh
 !*.py
@@ -25,4 +25,4 @@
 !*.lmiss
 !*.imiss
 !*.frq.strat
-
+!*.zip
