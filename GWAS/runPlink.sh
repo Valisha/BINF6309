@@ -43,5 +43,3 @@ plink --bfile hapmap1 --assoc --pheno qt.phe --perm --within str1.cluster2 --out
 plink --bfile hapmap1 --pheno qt.phe --gxe --covar pop.phe --snp rs2222162 --out quant3
 # extracting a SNP of interest
 plink --bfile hapmap1 --snp rs2222162 --recodeAD --out rec_snp1 
-
-

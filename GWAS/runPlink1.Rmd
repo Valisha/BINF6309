@@ -1,0 +1,20 @@
+---
+title: "R Notebook"
+output: github_document
+---
+
+```{r}
+library(knitr)
+library(readr)
+```
+
+```{r}
+kable(head(read.table("snp1_frq_stat.frq.strat")))
+kable(head(read.table("real.lmiss")))
+kable(head(read.table("real.imiss")))
+kable(head(read.table("quant3.qassoc.gxe")))
+kable(head(read.table("quant3.qassoc.mperm")))
+kable(head(read.table("quant2.qassoc")))
+kable(head(read.table("aac3.cmh.adjusted")))
+kable(head(read.table("aac1.cmh.adjusted")))
+```
