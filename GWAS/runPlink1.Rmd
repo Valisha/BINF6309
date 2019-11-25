@@ -1,6 +1,7 @@
 ---
-title: "R Notebook"
+title: "PLINK tutorial results"
 output: github_document
+author: Valisha Shah
 ---
 
 ```{r}
@@ -9,12 +10,28 @@ library(readr)
 ```
 
 ```{r}
+# the snp1_frq_strat files contains the population-specfic frequencies for this single SNP, which is rs1891905 for this file 
 kable(head(read.table("snp1_frq_stat.frq.strat")))
-kable(head(read.table("real.lmiss")))
-kable(head(read.table("real.imiss")))
-kable(head(read.table("quant3.qassoc.gxe")))
-kable(head(read.table("quant3.qassoc.mperm")))
-kable(head(read.table("quant2.qassoc")))
+# we can see the frequency distribution between Chinese and Japansese individuals 
+kable(head(read.table("as3.assoc.adjusted")))
+# we see a pre-sorted list of association results. In this particular case, we see that no single variant is significant at the 0.05 level after the genome-wide correction. 
+kable(head(read.table("as2.assoc.adjusted")))
+# after performing the matching based on the genome-wide IBS, we can perform the association test conditional on the matching. for this we use the Cochran-Man
+# tel-Haenszel association statistic, which tests for SNP-disease conditional on
+# the clustering supplied by the clusterr file.
+
 kable(head(read.table("aac3.cmh.adjusted")))
-kable(head(read.table("aac1.cmh.adjusted")))
+# this is where we analyze the quantitative trait directly that is a disease trait is based on a simple median split of a quantitative trait 
+# the output shows the number of non-missing individuals in each category along with the regression coefficient and standard error, followed by a test of whether these two regression coefficients are signficantly different
+kable(head(read.table("quant3.qassoc.gxe")))
+
+# viewing the graph on R
+m <- as.matrix(read.table("ibd_view.mibs"))
+mds <- cmdscale(as.dist(1-m))
+k <- c(rep("green",45), rep("blue", 44))
+plot(mds, pch=20,col=k)
+
+# Extracting SNP of interest
+d <- kable(head(read.table("rec_snp1.raw", header = T)))
+#summary(glm(PHENOTYPE~1 ~ rs2222162_A, data = d, family = "binomial"))
 ```
