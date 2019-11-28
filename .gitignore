@@ -16,13 +16,4 @@
 !*.Rmd
 !*.md
 !*.nb.html
-!*.qza
-!*qzv
 !*.R
-!*.mibs
-!*.mibs.id
-!*.raw
-!*.lmiss
-!*.imiss
-!*.frq.strat
-!*.zip

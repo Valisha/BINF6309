@@ -5,6 +5,7 @@ output: html_notebook
 ---
 
 ```{r}
+
 library(maftools)
 ```
 
@@ -12,7 +13,7 @@ library(maftools)
 # this chunk includes reading the maf files 
 clinical.data = system.file('extdata', 'tcga_laml_annot.tsv', package = 'maftools') 
 #na.omit(clinical.data)
-laml.f <- read.maf(maf = "C:/Users/shahv/OneDrive/Documents/tcga_laml.maf.gz", clinicalData = clinical.data) #create a MAF object
+laml.f <- read.maf(maf = "tcga_laml.maf.gz", clinicalData = clinical.data) #create a MAF object
 laml.df = subsetMaf(laml.f, mafObj=FALSE) #creates a data.frame of laml.maf - this can be viewed as a table 
 head(laml.df)
 head(clinical.data)
