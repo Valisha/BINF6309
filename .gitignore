@@ -1,17 +1,15 @@
+# initialize with ignoring all the files
 *.*
+# allowing all the below files to get pushed to github
 !*.nex
 !*.pdf
 !*.png
-!APOE_refseq_transcript.fasta
-*.*
 !*.pl 
-*.*
 !*.pl
 !*.sh
 !*.py
 !*.qza
 !*.qzv
-*.fasta
 !*.ris
 !*.Rmd
 !*.md
