@@ -1,4 +1,4 @@
-# /usr/bin/env python3 
+#!/usr/bin/env python3 
 # import seq, seqRecord and seqID 
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
